@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Default Axis is X*/
+  justify-content: center; /* Main Axis */
+  align-items: center; /* Cross Axis */
+  background: linear-gradient(#270082, #7a0bc0, #ef4146);
+  opacity: 75%;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+h1:before {
+  content: "";
+  animation: animate infinite 4s;
+}
+@keyframes animate {
+  0% {
+    content: "Hello !";
+  }
+  20% {
+    content: "നമസ്കാരം";
+  }
+  40% {
+    content: "नमस्ते !";
+  }
+  60% {
+    content: "నమస్కారం !";
+  }
+  80% {
+    content: "வணக்கம்";
+  }
+  100% {
+    content: "ನಮಸ್ಕಾರ";
+  }
+}
